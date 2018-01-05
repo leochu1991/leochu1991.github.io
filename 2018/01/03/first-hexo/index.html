@@ -403,7 +403,22 @@
 
           
   <div class="comments" id="comments">
-    
+    <div id="container"></div>
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            id: 'hexo',
+            title: 'first-hexo',
+            owner: 'leochu1991',
+            repo: 'leochu1991.github.io',
+            oauth: {
+                client_id: '50ef1ac123e24274408a',
+                client_secret: 'bcef532c8cb2cd9682201097381e502689d259f2',
+            },
+        })
+        gitment.render('container')
+    </script>
   </div>
 
 
